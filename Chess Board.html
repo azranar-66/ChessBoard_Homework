@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        body {
+
+            background: -moz-linear-gradient(45deg, rgba(79, 9, 73, 1) 0%, rgba(154, 16, 156, 0) 100%);
+            background: -webkit-linear-gradient(45deg, rgba(79, 9, 73, 1) 0%, rgba(154, 16, 156, 0) 100%);
+            background: linear-gradient(45deg, rgba(79, 9, 73, 1) 0%, rgba(154, 16, 156, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f0949', endColorstr='#009a109c', GradientType=1);
+
+        }
+
+        .bord {
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgb(114, 1, 1);
+        }
+
+
+
+        .cell td:hover {
+            background-image: url(Chess_kdt45.svg);
+            background-size: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .cell1 td:hover {
+            background-image: url(Chess_qdt45.svg);
+            background-size: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .tibl {
+            border: 5px solid rgb(114, 1, 1);
+            width: 600px;
+            height: 600px;
+            background-color: rgb(114, 1, 1);
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        .let {
+            height: 1em;
+            color: rgb(114, 1, 1);
+            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 1.em;
+            background-color: rgb(230, 225, 157);
+            text-align: center;
+        }
+
+        .numb {
+            width: 1em;
+            color: rgb(114, 1, 1);
+            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 1.em;
+            background-color: rgb(230, 225, 157) !important;
+            text-align: center;
+            background-image: none !important;
+        }
+
+        .cell:nth-child(even) td:nth-child(odd),
+        .cell:nth-child(odd) td:nth-child(even) {
+            background-color: rgb(230, 225, 157);
+
+        }
+
+        .cell1:nth-child(even) td:nth-child(odd),
+        .cell1:nth-child(odd) td:nth-child(even) {
+            background-color: rgb(230, 225, 157);
+
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <table class="tibl">
+
+        <tr>
+            <td class="let"></td>
+            <td class="let">A</td>
+            <td class="let">B</td>
+            <td class="let">C</td>
+            <td class="let">D</td>
+            <td class="let">E</td>
+            <td class="let">F</td>
+            <td class="let">G</td>
+            <td class="let">H</td>
+            <td class="let"></td>
+        </tr>
+        <tr class="cell">
+            <td class="numb">8</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">8</td>
+        </tr>
+        <tr class="cell">
+            <td class="numb">7</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">7</td>
+        </tr>
+        <tr class="cell">
+            <td class="numb">6</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">6</td>
+        </tr>
+        <tr class="cell">
+            <td class="numb">5</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">5</td>
+        </tr>
+        <tr class="cell1">
+            <td class="numb">4</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">4</td>
+        </tr>
+        <tr class="cell1">
+            <td class="numb">3</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">3</td>
+        </tr>
+        <tr class="cell1">
+            <td class="numb">2</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">2</td>
+        </tr>
+        <tr class="cell1">
+            <td class="numb">1</td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="bord"></td>
+            <td class="numb">1</td>
+        </tr>
+        <tr>
+            <td class="let"></td>
+            <td class="let">A</td>
+            <td class="let">B</td>
+            <td class="let">C</td>
+            <td class="let">D</td>
+            <td class="let">E</td>
+            <td class="let">F</td>
+            <td class="let">G</td>
+            <td class="let">H</td>
+            <td class="let"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
